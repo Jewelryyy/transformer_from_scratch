@@ -1,0 +1,11 @@
+python src/train.py \
+    --d_model 128 \
+    --n_head 2 \
+    --n_enc_layers 2 \
+    --n_dec_layers 2 \
+    --d_ff 512 \
+    --dropout 0.1 \
+    --batch_size 16 \
+    --epochs 5 \
+    --lr 1e-3 \
+    --seed 42
