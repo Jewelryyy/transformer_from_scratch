@@ -63,3 +63,5 @@ sh scripts/run.sh
 - `loss_curve.png`: 训练和验证损失曲线图  
 - `acc_curve.png`: 验证准确率曲线图  
 - `config.json`: 训练时使用的配置参数
+
+由于词表占用空间较大，仓库不提供`best_transformer.pt`文件（482.94MB）。
