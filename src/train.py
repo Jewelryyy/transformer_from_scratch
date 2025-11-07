@@ -84,32 +84,32 @@ def train():
     tgt_len = 128
 
     # 构建词汇表
-    # vocab = {"<pad>": 0, "<s>": 1, "<unk>": 2}  # 初始化特殊标记
-    # idx = len(vocab)
-    # for example in raw_dataset["train"]:
-    #     for word in example["translation"][src_lang].split():
-    #         if word not in vocab:
-    #             vocab[word] = idx
-    #             idx += 1
-    #     for word in example["translation"][tgt_lang].split():
-    #         if word not in vocab:
-    #             vocab[word] = idx
-    #             idx += 1
+    vocab = {"<pad>": 0, "<s>": 1, "<unk>": 2}  # 初始化特殊标记
+    idx = len(vocab)
+    for example in raw_dataset["train"]:
+        for word in example["translation"][src_lang].split():
+            if word not in vocab:
+                vocab[word] = idx
+                idx += 1
+        for word in example["translation"][tgt_lang].split():
+            if word not in vocab:
+                vocab[word] = idx
+                idx += 1
 
     # 基于词频构建词汇表
-    max_vocab_size = 10000  # 最大词汇表大小
-    counter = Counter()
-    for example in raw_dataset["train"]:
-        counter.update(example["translation"][src_lang].split())
-        counter.update(example["translation"][tgt_lang].split())
+    # max_vocab_size = 10000  # 最大词汇表大小
+    # counter = Counter()
+    # for example in raw_dataset["train"]:
+    #     counter.update(example["translation"][src_lang].split())
+    #     counter.update(example["translation"][tgt_lang].split())
     
-    # 按词频排序并限制词汇表大小
-    most_common = counter.most_common(max_vocab_size - 3)  # 预留特殊标记
-    vocab = {"<pad>": 0, "<s>": 1, "<unk>": 2}
-    idx = len(vocab)
-    for word, _ in most_common:
-        vocab[word] = idx
-        idx += 1
+    # # 按词频排序并限制词汇表大小
+    # most_common = counter.most_common(max_vocab_size - 3)  # 预留特殊标记
+    # vocab = {"<pad>": 0, "<s>": 1, "<unk>": 2}
+    # idx = len(vocab)
+    # for word, _ in most_common:
+    #     vocab[word] = idx
+    #     idx += 1
 
     train_loader = DataLoader(
         raw_dataset["train"],
@@ -209,7 +209,7 @@ def train():
         val_accuracy /= total_val_seq
         val_accuracies.append(val_accuracy)
         logging.info(f"Epoch {ep+1}/{epochs}, Train Loss: {train_loss:.4f}, "
-                     f"Validation Loss: {avg_loss:.4f}, Accuracy: {val_accuracy:.4f}, Time: {t1-t0:.2f}s")
+                     f"Validation Loss: {val_loss:.4f}, Accuracy: {val_accuracy:.4f}, Time: {t1-t0:.2f}s")
 
         # 保存最佳模型
         if val_loss < best_val_loss:

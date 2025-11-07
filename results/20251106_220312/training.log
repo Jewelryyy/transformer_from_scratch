@@ -1,0 +1,154 @@
+2025-11-06 22:03:12 - INFO - Training Configuration:
+2025-11-06 22:03:12 - INFO - d_model: 128
+2025-11-06 22:03:12 - INFO - n_head: 2
+2025-11-06 22:03:12 - INFO - n_enc_layers: 2
+2025-11-06 22:03:12 - INFO - n_dec_layers: 2
+2025-11-06 22:03:12 - INFO - d_ff: 512
+2025-11-06 22:03:12 - INFO - dropout: 0.1
+2025-11-06 22:03:12 - INFO - batch_size: 16
+2025-11-06 22:03:12 - INFO - epochs: 5
+2025-11-06 22:03:12 - INFO - lr: 0.001
+2025-11-06 22:03:12 - INFO - seed: 42
+2025-11-06 22:03:12 - WARNING - Using the latest cached version of the module from /home/ic611/.cache/huggingface/modules/datasets_modules/datasets/iwslt2017/03ce9110373117c6f6687719f49f269486a8cd49dcad2527993a316cd4b6ad49 (last modified on Mon Nov  3 20:00:35 2025) since it couldn't be found locally at iwslt2017, or remotely on the Hugging Face Hub.
+2025-11-06 22:03:28 - INFO - vocab size: 321997
+2025-11-06 22:04:16 - INFO - Epoch 1/5, Batch 500, Loss: 3.6568
+2025-11-06 22:04:59 - INFO - Epoch 1/5, Batch 1000, Loss: 3.3914
+2025-11-06 22:05:43 - INFO - Epoch 1/5, Batch 1500, Loss: 3.2470
+2025-11-06 22:06:26 - INFO - Epoch 1/5, Batch 2000, Loss: 3.1565
+2025-11-06 22:07:09 - INFO - Epoch 1/5, Batch 2500, Loss: 3.0864
+2025-11-06 22:07:52 - INFO - Epoch 1/5, Batch 3000, Loss: 3.0259
+2025-11-06 22:08:35 - INFO - Epoch 1/5, Batch 3500, Loss: 2.9833
+2025-11-06 22:09:20 - INFO - Epoch 1/5, Batch 4000, Loss: 2.9424
+2025-11-06 22:10:03 - INFO - Epoch 1/5, Batch 4500, Loss: 2.9125
+2025-11-06 22:10:46 - INFO - Epoch 1/5, Batch 5000, Loss: 2.8881
+2025-11-06 22:11:28 - INFO - Epoch 1/5, Batch 5500, Loss: 2.8618
+2025-11-06 22:12:12 - INFO - Epoch 1/5, Batch 6000, Loss: 2.8358
+2025-11-06 22:12:54 - INFO - Epoch 1/5, Batch 6500, Loss: 2.8140
+2025-11-06 22:13:39 - INFO - Epoch 1/5, Batch 7000, Loss: 2.7921
+2025-11-06 22:14:24 - INFO - Epoch 1/5, Batch 7500, Loss: 2.7727
+2025-11-06 22:15:08 - INFO - Epoch 1/5, Batch 8000, Loss: 2.7568
+2025-11-06 22:15:53 - INFO - Epoch 1/5, Batch 8500, Loss: 2.7404
+2025-11-06 22:16:37 - INFO - Epoch 1/5, Batch 9000, Loss: 2.7243
+2025-11-06 22:17:20 - INFO - Epoch 1/5, Batch 9500, Loss: 2.7067
+2025-11-06 22:18:03 - INFO - Epoch 1/5, Batch 10000, Loss: 2.6916
+2025-11-06 22:18:46 - INFO - Epoch 1/5, Batch 10500, Loss: 2.6766
+2025-11-06 22:19:29 - INFO - Epoch 1/5, Batch 11000, Loss: 2.6628
+2025-11-06 22:20:12 - INFO - Epoch 1/5, Batch 11500, Loss: 2.6495
+2025-11-06 22:20:55 - INFO - Epoch 1/5, Batch 12000, Loss: 2.6384
+2025-11-06 22:21:38 - INFO - Epoch 1/5, Batch 12500, Loss: 2.6256
+2025-11-06 22:22:13 - INFO - Epoch 1/5, Train Loss: 2.6150, Validation Loss: 2.6256, Accuracy: 0.2725, Time: 1119.44s
+2025-11-06 22:22:15 - INFO - Saved best model to ./results/20251106_220312/best_transformer.pt
+2025-11-06 22:22:15 - INFO - Best Validation Loss: 2.2773, Best PPL: 9.749997939981599
+2025-11-06 22:22:58 - INFO - Epoch 2/5, Batch 500, Loss: 2.1011
+2025-11-06 22:23:41 - INFO - Epoch 2/5, Batch 1000, Loss: 2.1068
+2025-11-06 22:24:24 - INFO - Epoch 2/5, Batch 1500, Loss: 2.1071
+2025-11-06 22:25:07 - INFO - Epoch 2/5, Batch 2000, Loss: 2.1080
+2025-11-06 22:25:51 - INFO - Epoch 2/5, Batch 2500, Loss: 2.1007
+2025-11-06 22:26:34 - INFO - Epoch 2/5, Batch 3000, Loss: 2.0946
+2025-11-06 22:27:17 - INFO - Epoch 2/5, Batch 3500, Loss: 2.0984
+2025-11-06 22:28:01 - INFO - Epoch 2/5, Batch 4000, Loss: 2.0959
+2025-11-06 22:28:44 - INFO - Epoch 2/5, Batch 4500, Loss: 2.0954
+2025-11-06 22:29:27 - INFO - Epoch 2/5, Batch 5000, Loss: 2.0946
+2025-11-06 22:30:11 - INFO - Epoch 2/5, Batch 5500, Loss: 2.0932
+2025-11-06 22:30:55 - INFO - Epoch 2/5, Batch 6000, Loss: 2.0912
+2025-11-06 22:31:39 - INFO - Epoch 2/5, Batch 6500, Loss: 2.0906
+2025-11-06 22:32:22 - INFO - Epoch 2/5, Batch 7000, Loss: 2.0913
+2025-11-06 22:33:05 - INFO - Epoch 2/5, Batch 7500, Loss: 2.0901
+2025-11-06 22:33:49 - INFO - Epoch 2/5, Batch 8000, Loss: 2.0876
+2025-11-06 22:34:32 - INFO - Epoch 2/5, Batch 8500, Loss: 2.0847
+2025-11-06 22:35:15 - INFO - Epoch 2/5, Batch 9000, Loss: 2.0838
+2025-11-06 22:35:58 - INFO - Epoch 2/5, Batch 9500, Loss: 2.0835
+2025-11-06 22:36:41 - INFO - Epoch 2/5, Batch 10000, Loss: 2.0818
+2025-11-06 22:37:24 - INFO - Epoch 2/5, Batch 10500, Loss: 2.0812
+2025-11-06 22:38:06 - INFO - Epoch 2/5, Batch 11000, Loss: 2.0818
+2025-11-06 22:38:50 - INFO - Epoch 2/5, Batch 11500, Loss: 2.0792
+2025-11-06 22:39:33 - INFO - Epoch 2/5, Batch 12000, Loss: 2.0771
+2025-11-06 22:40:16 - INFO - Epoch 2/5, Batch 12500, Loss: 2.0746
+2025-11-06 22:40:51 - INFO - Epoch 2/5, Train Loss: 2.0744, Validation Loss: 2.0746, Accuracy: 0.3240, Time: 1114.05s
+2025-11-06 22:40:53 - INFO - Saved best model to ./results/20251106_220312/best_transformer.pt
+2025-11-06 22:40:53 - INFO - Best Validation Loss: 2.0209, Best PPL: 7.545352679298357
+2025-11-06 22:41:36 - INFO - Epoch 3/5, Batch 500, Loss: 1.7816
+2025-11-06 22:42:18 - INFO - Epoch 3/5, Batch 1000, Loss: 1.8013
+2025-11-06 22:43:02 - INFO - Epoch 3/5, Batch 1500, Loss: 1.8111
+2025-11-06 22:43:44 - INFO - Epoch 3/5, Batch 2000, Loss: 1.8166
+2025-11-06 22:44:27 - INFO - Epoch 3/5, Batch 2500, Loss: 1.8174
+2025-11-06 22:45:10 - INFO - Epoch 3/5, Batch 3000, Loss: 1.8206
+2025-11-06 22:45:53 - INFO - Epoch 3/5, Batch 3500, Loss: 1.8218
+2025-11-06 22:46:36 - INFO - Epoch 3/5, Batch 4000, Loss: 1.8239
+2025-11-06 22:47:19 - INFO - Epoch 3/5, Batch 4500, Loss: 1.8268
+2025-11-06 22:48:02 - INFO - Epoch 3/5, Batch 5000, Loss: 1.8296
+2025-11-06 22:48:45 - INFO - Epoch 3/5, Batch 5500, Loss: 1.8304
+2025-11-06 22:49:28 - INFO - Epoch 3/5, Batch 6000, Loss: 1.8336
+2025-11-06 22:50:12 - INFO - Epoch 3/5, Batch 6500, Loss: 1.8348
+2025-11-06 22:50:55 - INFO - Epoch 3/5, Batch 7000, Loss: 1.8364
+2025-11-06 22:51:39 - INFO - Epoch 3/5, Batch 7500, Loss: 1.8361
+2025-11-06 22:52:22 - INFO - Epoch 3/5, Batch 8000, Loss: 1.8373
+2025-11-06 22:53:06 - INFO - Epoch 3/5, Batch 8500, Loss: 1.8400
+2025-11-06 22:53:49 - INFO - Epoch 3/5, Batch 9000, Loss: 1.8415
+2025-11-06 22:54:33 - INFO - Epoch 3/5, Batch 9500, Loss: 1.8421
+2025-11-06 22:55:16 - INFO - Epoch 3/5, Batch 10000, Loss: 1.8441
+2025-11-06 22:55:59 - INFO - Epoch 3/5, Batch 10500, Loss: 1.8460
+2025-11-06 22:56:42 - INFO - Epoch 3/5, Batch 11000, Loss: 1.8468
+2025-11-06 22:57:25 - INFO - Epoch 3/5, Batch 11500, Loss: 1.8476
+2025-11-06 22:58:09 - INFO - Epoch 3/5, Batch 12000, Loss: 1.8471
+2025-11-06 22:58:52 - INFO - Epoch 3/5, Batch 12500, Loss: 1.8479
+2025-11-06 22:59:27 - INFO - Epoch 3/5, Train Loss: 1.8486, Validation Loss: 1.8479, Accuracy: 0.3505, Time: 1112.56s
+2025-11-06 22:59:29 - INFO - Saved best model to ./results/20251106_220312/best_transformer.pt
+2025-11-06 22:59:29 - INFO - Best Validation Loss: 1.8907, Best PPL: 6.624200199503533
+2025-11-06 23:00:12 - INFO - Epoch 4/5, Batch 500, Loss: 1.6221
+2025-11-06 23:00:55 - INFO - Epoch 4/5, Batch 1000, Loss: 1.6311
+2025-11-06 23:01:38 - INFO - Epoch 4/5, Batch 1500, Loss: 1.6354
+2025-11-06 23:02:22 - INFO - Epoch 4/5, Batch 2000, Loss: 1.6363
+2025-11-06 23:03:05 - INFO - Epoch 4/5, Batch 2500, Loss: 1.6408
+2025-11-06 23:03:49 - INFO - Epoch 4/5, Batch 3000, Loss: 1.6459
+2025-11-06 23:04:31 - INFO - Epoch 4/5, Batch 3500, Loss: 1.6503
+2025-11-06 23:05:14 - INFO - Epoch 4/5, Batch 4000, Loss: 1.6586
+2025-11-06 23:05:57 - INFO - Epoch 4/5, Batch 4500, Loss: 1.6623
+2025-11-06 23:06:41 - INFO - Epoch 4/5, Batch 5000, Loss: 1.6687
+2025-11-06 23:07:24 - INFO - Epoch 4/5, Batch 5500, Loss: 1.6720
+2025-11-06 23:08:07 - INFO - Epoch 4/5, Batch 6000, Loss: 1.6740
+2025-11-06 23:08:50 - INFO - Epoch 4/5, Batch 6500, Loss: 1.6793
+2025-11-06 23:09:33 - INFO - Epoch 4/5, Batch 7000, Loss: 1.6838
+2025-11-06 23:10:16 - INFO - Epoch 4/5, Batch 7500, Loss: 1.6884
+2025-11-06 23:10:59 - INFO - Epoch 4/5, Batch 8000, Loss: 1.6902
+2025-11-06 23:11:43 - INFO - Epoch 4/5, Batch 8500, Loss: 1.6924
+2025-11-06 23:12:26 - INFO - Epoch 4/5, Batch 9000, Loss: 1.6947
+2025-11-06 23:13:10 - INFO - Epoch 4/5, Batch 9500, Loss: 1.6979
+2025-11-06 23:13:53 - INFO - Epoch 4/5, Batch 10000, Loss: 1.7010
+2025-11-06 23:14:36 - INFO - Epoch 4/5, Batch 10500, Loss: 1.7025
+2025-11-06 23:15:19 - INFO - Epoch 4/5, Batch 11000, Loss: 1.7041
+2025-11-06 23:16:02 - INFO - Epoch 4/5, Batch 11500, Loss: 1.7061
+2025-11-06 23:16:45 - INFO - Epoch 4/5, Batch 12000, Loss: 1.7080
+2025-11-06 23:17:28 - INFO - Epoch 4/5, Batch 12500, Loss: 1.7107
+2025-11-06 23:18:02 - INFO - Epoch 4/5, Train Loss: 1.7113, Validation Loss: 1.7107, Accuracy: 0.3667, Time: 1111.60s
+2025-11-06 23:18:05 - INFO - Saved best model to ./results/20251106_220312/best_transformer.pt
+2025-11-06 23:18:05 - INFO - Best Validation Loss: 1.8134, Best PPL: 6.131243562612822
+2025-11-06 23:18:48 - INFO - Epoch 5/5, Batch 500, Loss: 1.4647
+2025-11-06 23:19:31 - INFO - Epoch 5/5, Batch 1000, Loss: 1.4939
+2025-11-06 23:20:14 - INFO - Epoch 5/5, Batch 1500, Loss: 1.4989
+2025-11-06 23:20:57 - INFO - Epoch 5/5, Batch 2000, Loss: 1.5065
+2025-11-06 23:21:41 - INFO - Epoch 5/5, Batch 2500, Loss: 1.5094
+2025-11-06 23:22:24 - INFO - Epoch 5/5, Batch 3000, Loss: 1.5173
+2025-11-06 23:23:07 - INFO - Epoch 5/5, Batch 3500, Loss: 1.5255
+2025-11-06 23:23:50 - INFO - Epoch 5/5, Batch 4000, Loss: 1.5321
+2025-11-06 23:24:34 - INFO - Epoch 5/5, Batch 4500, Loss: 1.5386
+2025-11-06 23:25:17 - INFO - Epoch 5/5, Batch 5000, Loss: 1.5447
+2025-11-06 23:26:00 - INFO - Epoch 5/5, Batch 5500, Loss: 1.5496
+2025-11-06 23:26:43 - INFO - Epoch 5/5, Batch 6000, Loss: 1.5545
+2025-11-06 23:27:26 - INFO - Epoch 5/5, Batch 6500, Loss: 1.5607
+2025-11-06 23:28:09 - INFO - Epoch 5/5, Batch 7000, Loss: 1.5647
+2025-11-06 23:28:52 - INFO - Epoch 5/5, Batch 7500, Loss: 1.5703
+2025-11-06 23:29:35 - INFO - Epoch 5/5, Batch 8000, Loss: 1.5727
+2025-11-06 23:30:18 - INFO - Epoch 5/5, Batch 8500, Loss: 1.5763
+2025-11-06 23:31:01 - INFO - Epoch 5/5, Batch 9000, Loss: 1.5798
+2025-11-06 23:31:45 - INFO - Epoch 5/5, Batch 9500, Loss: 1.5815
+2025-11-06 23:32:28 - INFO - Epoch 5/5, Batch 10000, Loss: 1.5852
+2025-11-06 23:33:11 - INFO - Epoch 5/5, Batch 10500, Loss: 1.5883
+2025-11-06 23:33:54 - INFO - Epoch 5/5, Batch 11000, Loss: 1.5908
+2025-11-06 23:34:38 - INFO - Epoch 5/5, Batch 11500, Loss: 1.5920
+2025-11-06 23:35:21 - INFO - Epoch 5/5, Batch 12000, Loss: 1.5952
+2025-11-06 23:36:05 - INFO - Epoch 5/5, Batch 12500, Loss: 1.5978
+2025-11-06 23:36:39 - INFO - Epoch 5/5, Train Loss: 1.6000, Validation Loss: 1.5978, Accuracy: 0.3855, Time: 1112.90s
+2025-11-06 23:36:41 - INFO - Saved best model to ./results/20251106_220312/best_transformer.pt
+2025-11-06 23:36:41 - INFO - Best Validation Loss: 1.7547, Best PPL: 5.781757695009338
+2025-11-06 23:36:42 - INFO - Saved training parameters to ./results/20251106_220312/config.json

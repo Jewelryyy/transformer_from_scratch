@@ -1,6 +1,6 @@
 python src/train.py \
     --d_model 128 \
-    --n_head 2 \
+    --n_head 4 \
     --n_enc_layers 2 \
     --n_dec_layers 2 \
     --d_ff 512 \

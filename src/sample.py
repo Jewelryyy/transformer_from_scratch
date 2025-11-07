@@ -3,10 +3,13 @@ from model import Seq2SeqTransformer
 from utils import load_model_and_vocab
 
 # 加载模型和词汇表
-model, vocab, inv_id = load_model_and_vocab("./results/config.json", "./results/best_transformer.pt")
+model, vocab, inv_id = load_model_and_vocab("./results/20251106_202257/config.json", "./results/20251106_202257/best_transformer.pt")
 
 # 示例样本
-sample = "This is a test sentence."
+# sample = "The permanent ice is marked in red."
+# target = "Das Dauereis ist mit rot markiert."
+sample = "This is an annual melting river."
+target = "Dies ist ein jährlicher Tauwasserfluss."
 
 # 将样本转换为模型输入
 def preprocess_sample(sample, vocab, src_len=128):
@@ -37,6 +40,7 @@ for _ in range(max_len):
         break
 
 # 解码预测结果
-idx_to_word = {idx: word for word, idx in inv_id.items()}
+idx_to_word = {int(idx): word for word, idx in vocab.items()}
 prediction = [idx_to_word[token.item()] for token in decoder_input.squeeze()]
 print("预测结果:", " ".join(prediction))
+print("真实结果: ", target)
